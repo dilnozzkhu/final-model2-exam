@@ -31,3 +31,39 @@ User's Posts: Shows the posts of only the selected user.
 Notifications
 Notifications to Follow: "Azizbek followed you" - it creates a link to his profile when clicked.
 Notifications to Comments: "New comment on Post Title" - it creates a link to the post when clicked.
+
+
+Project Setup
+This project can be setup by following the steps below:
+
+1. Clone the Repository
+bash
+
+git clone https://github.com/yourusername/your-repo-name.git
+cd your-repo-name
+2. Set Up a Virtual Environment
+bash
+
+python3 -m venv venv
+source venv/bin/activate  # On Windows, use `venv\\Scripts\\activate`
+3. Install Required Libraries
+bash
+
+pip install -r requirements.txt
+4. Configure Environment Variables
+Create a .env file in the project root and add the necessary environment variables, example:
+
+makefile
+
+SECRET_KEY=your_secret_key
+DEBUG=True
+ALLOWED_HOSTS=localhost,127.0.0.1
+EMAIL_BACKEND
+
+python manage.py createsuperuser
+7. Start the Development Server
+bash
+
+python manage.py runserver
+8. Access the Project
+Open your browser and go to http://127.0.0.1:8000 and you will have the Blog Site.
